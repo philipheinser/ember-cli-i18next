@@ -11,7 +11,7 @@ export default {
     app.deferReadiness();
 
     var locale = localStorage.locale || 'en'
-      , baseUrl = config.['i18next'].baseURL || '/';
+      , baseUrl = config['i18next'].baseURL || '/';
 
     i18n.init({
       ns: { 
