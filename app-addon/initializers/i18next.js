@@ -63,6 +63,6 @@ export default {
       return value.toUpperCase();
     });
 
-    Ember.Handlebars.registerBoundHelper('t', helper);
+    Ember.Handlebars.helper('t', helper);
   }
 };
