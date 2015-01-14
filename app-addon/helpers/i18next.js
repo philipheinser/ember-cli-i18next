@@ -3,5 +3,11 @@
 import Ember from 'ember';
 
 export default function(key, options) {
-  return new Ember.Handlebars.SafeString(i18n.t(key, options ? options : {}));
+
+  if (!options) options = {};
+  var opts = options.hash;
+
+  var result = i18n.t(key, opts);
+  
+  return new Handlebars.SafeString(result);
 }
